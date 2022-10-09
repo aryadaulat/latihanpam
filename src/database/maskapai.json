@@ -1,0 +1,17 @@
+[
+		{
+		"maskapai_id":"1",
+		"maskapai_nama" :"Lions",
+		"maskapai_logo" :"linklogo"
+	},
+	{
+		"maskapai_id":"2",
+		"maskapai_nama" :"Garuda",
+		"maskapai_logo" :"linklogo"
+	},
+	{
+		"maskapai_id":"3",
+		"maskapai_nama" :"Batik Air",
+		"maskapai_logo" :"linklogo"
+	}
+]
