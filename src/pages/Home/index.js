@@ -18,13 +18,13 @@ import {useNavigation} from '@react-navigation/native';
 
 const Home = () => {
   const [lokasikeberangkatan, setLokasikeberangkatan] = useState(
-    'Masukkan Lokasi Keberangkatan',
+    'Lokasi Keberangkatan',
   );
   const [kodekeberangkatan, setKodekeberangkatan] = useState('');
-  const [lokasitujuan, setLokasitujuan] = useState('Masukkan Lokasi Tujuan');
+  const [lokasitujuan, setLokasitujuan] = useState('Lokasi Tujuan');
   const [kodetujuan, setKodetujuan] = useState('');
   const [tanggalkeberangkatan, setTanggalkeberangkatan] = useState(
-    'Masukkan Tanggal Keberangkatan',
+    'Tanggal Keberangkatan',
   );
   const [databandara, setDatabandara] = useState(bandara);
   const [modalVisible, setModalVisible] = useState(false);
@@ -169,7 +169,7 @@ const Home = () => {
               <Pressable
                 onPress={() => openmodal('keberangkatan')}
                 style={{width: '100%'}}>
-                <Text>{lokasikeberangkatan}</Text>
+                <Text style={styles.textoption}>{lokasikeberangkatan}</Text>
               </Pressable>
             </SafeAreaView>
           </SafeAreaView>
@@ -185,7 +185,7 @@ const Home = () => {
               <Pressable
                 onPress={() => openmodal('Tujuan')}
                 style={{width: '100%'}}>
-                <Text>{lokasitujuan}</Text>
+                <Text style={styles.textoption}>{lokasitujuan}</Text>
               </Pressable>
             </SafeAreaView>
           </SafeAreaView>
@@ -199,7 +199,7 @@ const Home = () => {
                 style={styles.icon}
               />
               <Pressable onPress={() => setModalVisible(!modalVisible)}>
-                <Text>{tanggalkeberangkatan}</Text>
+                <Text style={styles.textoption}>{tanggalkeberangkatan}</Text>
               </Pressable>
             </SafeAreaView>
           </SafeAreaView>
@@ -342,4 +342,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginBottom: 30,
   },
+	textoption:{
+		color:'black',
+	},
 });
